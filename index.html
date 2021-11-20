@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ </head>
+ <body>
+   <div class="wrapper">
+  <Inform>
+   <div class="div1">
+    <label>Друзья, мы работаем! Не принимаем оплату наличными. Оформляйте заказ на сайте. Хорошего дня!</label>
+</div>
+  </Inform>
+  <div class="container">
+  <header class="header">
+    <li class="nav1"><a href="default.asp">Оплата</a></li>
+    <li class="nav2"><a href="news.asp">Доставка</a></li>
+    <li class="nav3"><a href="contact.asp">Отзовы</a></li>
+    <li class="nav4"><a href="about.asp">Как сделать заказ</a></li>
+    <li class="nav5"><a href="default.asp">О нас</a></li>
+    <li class="nav6"><a href="default.asp">Гарантии</a></li>
+    <li class="nav7"><a href="default.asp">Контакты</a></li>
+    <form >
+      
+      <input class="Q" placeholder="    Поиск" type="search">
+      <i class="icon">
+        <i class="icon1"></i>
+      </i>
+      <button type="submit" name="Butt">
+        <span class="arrow"></span>
+      </button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+    <script>
+       
+  $(document).ready(function(){
+    $('.splLink').click(function(){
+      $(this).parent().children('div.splCont').toggle('normal');
+        return false;
+    });
+  });
+  $(document).ready(function(){
+    $('.splLink2').click(function(){
+      $(this).parent().children('div.splCont3').toggle('normal');
+        return false;
+    });
+  });
+  $(document).ready(function(){
+    $('.splLink1').click(function(){
+      $(this).parent().children('div.splCont2').toggle('normal');
+        return false;
+    });
+  });
+       function showhide(id) {
+        var e = document.getElementById('logo');
+        e.style.display = (e.style.display == 'none') ? 'block' : 'none';
+        var e1 = document.getElementById('basketLogo');
+        e1.style.display = (e1.style.display == 'none') ? 'block' : 'none';
+        var e2 = document.getElementById('frame2');
+        e2.style.display = (e2.style.display == 'none') ? 'block' : 'none';
+        var e3 = document.getElementById('heartLogo');
+        e3.style.display = (e3.style.display == 'none') ? 'block' : 'none';
+        var elem4 = document.getElementById('exit');
+    elem4.style.left = (elem4.style.left == '400px') ?  '' : '400px';
+     }
+    </script>
+    
+    <div name="menu-btn" class="burger-menu">
+      <input id="menu-toggle" class="checkbox" name="menu-toggle" type="checkbox" />
+      <label onClick='showhide()' class="menu-btn" name="menu-btn" for="menu-toggle">
+        <span  id='exit' className="exit" name="menu-btn"></span>
+      </label>
+   
+      <ul class="menubox">
+        <img src="login.jpg" class="logoMobile"/>
+              <li><a class="menu-item" href="#">Вход в личный кабинет</a></li>
+              <span class="line73"></span>
+              <img src="lupa.jpg" class="lupa"/>
+              <li><a class="menu-item" href="#">Поиск</a></li>
+              <span class="line74"></span>
+              <li><a class="menu-item" href="#">Избранное</a></li>
+              <img src="heart.jpg" class="heartLogo1"/>
+              <span class="line75"></span>
+              <!-- <li><a class="menu-item" href="#">Каталог</a></li> -->
+              <i class="vect1"></i>
+              <a href="javscript://" class="splLink">Каталог</a>
+<div class="splCont">
+  <div class="splink1">Каталог 
+    <i class="vect10"></i>
+  </div>
+  <a class="rose1" href="rose">АКЦИИ
+    
+  </diav> <br/>
+  <a class="flowers1" href="flowers">ЦВЕТЫ</a> <br/>
+                <a class="bouqet1" href="bouqet">БУКЕТЫ</a> <br/>
+                <a class="composition1" href="composition">КОМПОЗИЦИИ</a> <br/>
+                <a class="presents1" href="presents">ПОДАРКИ</a> 
+</div>
+               
+              <span class="line76"></span>
+              <i class="vect2"></i>
+              <a href="javscript://" class="splLink1">О компании</a>
+              <div class="splCont2">
+                <div class="splink2">О компании</div>
+                <a class="rose1" href="rose">О нас</diav> <br/>
+                <a class="flowers1" href="flowers">Отзовы</a> <br/>
+                              <a class="bouqet1" href="bouqet">Контакты</a> <br/>       
+              </div>
+              <span class="line77"></span>
+              <i class="vect3"></i>
+              <a href="javscript://" class="splLink2">Интернет-магазин</a>
+              <div class="splCont3">
+                <div class="splink3">Интернет-магазин</div>
+                <a class="rose1" href="rose">Доставка</diav> <br/>
+                <a class="flowers1" href="flowers">Оплата</a> <br/>
+                <a class="bouqet1" href="bouqet">Гарантии</a> <br/>   
+                <a class="composition1" href="bouqet1">Вопросы и ответы</a> <br/>     
+              </div>
+              <span class="line78"></span>
+              <li><a class="menu-item" href="#">
+                <img src="phone.jpg" id='phoneIcon' alt="phone" class="phoneIcon">
+                <a class="number3" href="123.com">+7 (999) 999-999</a> 
+                <br/>
+                <a class="obrCall1" href="callback.ru">Обратный звонок</a>
+               </a></li>
+      </ul>
+    </div>
+  </header>
+  <span class="line72"></span>
+  <div class="infoBar"> 
+    <a href="home" class="">
+    <img src="png.jpg" alt="logo" name="logo" id='logo' class="logo" >
+  </a>
+    <li class="Frame1">
+      <div class="timeWork">
+      <i class="time">
+        <i class="clock1"></i>
+        <i class="clock"></i>
+      </i>
+        <div class="timeWrk">Время работы:
+          <i class="Numbers">09:00 - 20:30</i>
+        </div>
+      </div>
+        <i class="adrIcon">
+        <img src="pngAdr.jpg" alt="logo" class="adrLogo">
+        </i>
+        <div class="Adress">ул.Ак. Вавилова, д. 1, стр. 10
+          <i class="vect"></i>
+        </div>
+        <div class="adrLine">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+
+    </li>
+    <li class="Frame2" id="frame2">
+      <img src="phone.jpg" id='phoneIcon' alt="phone" class="phoneIcon">
+        <a class="number1" href="123.com">+7 (999) 999-999</a> <br/>
+        <a class="number2" href="123.com">+7 (999) 999-999</a>
+        <a class="obrCall" href="callback.ru">Обратный звонок</a>
+    </li>
+    <span class="line"></span>
+    <a href="login">
+    <img src="login.jpg" alt="login" class="loginLogo"> 
+    <div class="login">Вход
+    </div>
+  </a>
+  <a href="favotite">
+    <img src="heart.jpg"  id='heartLogo' alt="heart" class="heartLogo"> 
+    <div class="favorite">Избранное</div>
+  </a>
+  <a href="basket">
+    <img src="basket.jpg" id='basketLogo' alt="basket" class="basketLogo"> 
+    <div class="basket">Корзина</div>
+  </a>
+  </div>
+  <section class="menu">
+ <a class="salebox" href="sales">АКЦИИ</a>
+ <a class="flowers" href="flowers">ЦВЕТЫ</a>
+ <a class="rose" href="rose">РОЗЫ</diav>
+ <a class="bouqet" href="bouqet">БУКЕТЫ</a>
+ <a class="composition" href="composition">КОМПОЗИЦИИ</a>
+ <a class="presents" href="presents">ПОДАРКИ</a>
+  </section>
+</div>
+</div>
+ </body>
+ <footer class="footer">
+
+ </footer>
+</html>
